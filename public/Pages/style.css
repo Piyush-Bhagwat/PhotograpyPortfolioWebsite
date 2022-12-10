@@ -21,6 +21,12 @@ h1{
     font-weight: 800;
 }
 
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+}
+
 h4{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5em;
@@ -230,27 +236,27 @@ section{
 }
 
 .footer{
-    height: 50vh;
+    height: 7vh;
+    display: flex;
     width: 100%;
     background-color: #303030;
-}
-
-.footer form{
-    display: flex;
-    flex-direction: column;
+    justify-content:space-around;
     align-items: center;
 }
 
-.footer input{
-    background: none;
-    border: none;
-    border-bottom: 2px solid #fff;
-    color: #fff;
+.footer a{
+    color: #e9e9e9;
+    text-decoration: none;
 }
 
-.footer label{
-    position: absolute;
-    
+.footer a:hover{
+    color: rgb(237, 133, 133);
+}
+
+.footer p{
+    color: #e9e9e9;
+    text-align: center;
+    margin: 0;
 }
 
 @keyframes popFadeIn{
