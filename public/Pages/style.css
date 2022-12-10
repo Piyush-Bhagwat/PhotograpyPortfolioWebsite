@@ -27,10 +27,15 @@ h4{
     font-weight: 200;
 }
 
+section{
+    padding: 2%;
+}
+
 .pageHeadings{
     text-align: center;
     padding: 30px;
 }
+
 
 /* PopUp */
 .imgPopUp{
@@ -207,6 +212,45 @@ h4{
 
 .stuck{
     overflow: hidden;
+}
+
+/* About */
+.infoBoxLeft{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infoBoxRight{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer{
+    height: 50vh;
+    width: 100%;
+    background-color: #303030;
+}
+
+.footer form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer input{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.footer label{
+    position: absolute;
+    
 }
 
 @keyframes popFadeIn{
