@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Portfolio | Landscapes</title>
+        <title>portfolio</title>
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -15,7 +15,7 @@
     <body>
         
         <div class="imgPopUp">
-            <button>X</button>
+            <button><i class="fa-solid fa-xmark"></i></button>
             <img src="" alt="Pop up img">
         </div>
 
@@ -25,10 +25,10 @@
                     <div>
                         <ul class="Navigation">
                             <li><a href="/">Home</a></li>
-                            <li><a href="/about">About</a></li>
+                            <li class="activeLi"><a href="/about">About</a></li>
                             <li><a href="/animals">Animals</a></li>
                             <li><a href="/birds">Birds</a></li>
-                            <li class="activeLi"><a href="/landscapes">Landscapes</a></li>
+                            <li><a href="/landscapes">Landscapes</a></li>
                         </ul>
                     </div>
 
@@ -45,25 +45,17 @@
 
             <div class="col-10">
                 <div class="content">
-                    <h1 class="pageHeadings">Landscapes Photograps</h1>
-                    
-                    <div class="galleryBox">
-                    <% let k = 0 %>
-                    <%for(let i=0; i<3; i++){%>
-                        <div class="galleryCol">
-                        
-                        <%for(let j=0; j<3; j++){%>
-                            <div class="galleryImg">
-                                <img src="./images/Landscapes/<%=imgName[k]%>" class="images" alt="MyImage">
+
+                    <div class="titleBox">
+                        <div class="row">
+                            <div class="col title">
+                                <h1>I am Laura Madaro</h1>
+                                <h4>A wildLife Photographer. I love to capture birds and animals</h4>
                             </div>
-                            <%k++%>
-                            <%if(k > imgName.length){%>
-                            <%break}%>
-                        <%}%>
+                            <div class="col profilePic">
+                                <img src="./images/ProfilePic.jpg" alt="PortraitPhoto">
+                            </div>
                         </div>
-                        <%if(k > imgName.length){%>
-                        <%break}%>
-                    <%}%>                     
                     </div>
                 </div>
             </div>

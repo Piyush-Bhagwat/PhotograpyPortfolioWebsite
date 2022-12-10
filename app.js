@@ -54,6 +54,10 @@ app.get('/landscapes', function(req, res){
     res.render('landscapes', {imgName: images.landscapeFileNames});
 });
 
+app.get('/about', function(req, res){
+    res.render("about");
+});
+
 app.listen(3000, function(){
     console.log('app started');
 });
