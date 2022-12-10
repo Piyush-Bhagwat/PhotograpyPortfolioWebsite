@@ -113,11 +113,10 @@ h4{
     bottom: -10px;
     transform: scaleX(0);
     transform-origin: right;
-
+    transition: 0.3s ease;
 }
 
-.Navigation a:hover:after{
-    transition: 0.3s ease;
+.Navigation a:hover:after, .activeLi a:after{
     transform: scaleX(1);
 }
 
