@@ -113,22 +113,9 @@ section{
     padding: 0 10px;
 }
 
-.Navigation a:after{
-    content: '';
-    position: absolute;
-    background-color: #4f4f4f;
-    height: 3px;    
-    border-radius: 2px;
-    width: 100%;
-    left: 0;
-    bottom: -10px;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: 0.3s ease;
-}
-
-.Navigation a:hover:after, .activeLi a:after{
-    transform: scaleX(1);
+.Navigation a:hover, .activeLi a{
+    transition: 0.3s;
+    font-weight: 700;
 }
 
 .contact ul, .contact{
