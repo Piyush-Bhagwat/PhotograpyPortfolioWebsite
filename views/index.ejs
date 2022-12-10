@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>portfolio</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./Pages/style.css">
+    </head>
+    <body>
+        
+        <div class="imgPopUp">
+            <button><i class="fa-solid fa-xmark"></i></button>
+            <img src="" alt="Pop up img">
+        </div>
+
+        <div class="row">
+            <div class="col-2">
+                <div class="sidePanel">
+                    <div>
+                        <ul class="Navigation">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="/animals">Animals</a></li>
+                            <li><a href="/birds">Birds</a></li>
+                            <li><a href="/landscapes">Landscapes</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="contact">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-10">
+                <div class="content">
+                    
+                    <div class="titleBox">
+                        <div class="row">
+                            <div class="col title">
+                                <h1>I am Laura Madaro</h1>
+                                <h4>A wildLife Photographer. I love to capture birds and animals</h4>
+                            </div>
+                            <div class="col profilePic">
+                                <img src="./images/ProfilePic.jpg" alt="PortraitPhoto">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="galleryBox">
+                    <% let k = 0 %>
+                    <%for(let i=0; i<3; i++){%>
+                        <div class="galleryCol">
+                        
+                        <%for(let j=0; j<7; j++){%>
+                            <div class="galleryImg">
+                                <img src="./images<%=imgName[k]%>" class="images" alt="MyImage">
+                            </div>
+                            <%k++%>
+                            <%if(k > imgName.length){%>
+                            <%break}%>
+                        <%}%>
+                        </div>
+                        <%if(k > imgName.length){%>
+                        <%break}%>
+                    <%}%>                     
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://kit.fontawesome.com/50889841b5.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="./Pages/logic.js"></script>
+    </body>
+</html>
