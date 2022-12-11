@@ -11,6 +11,7 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="./Pages/style.css">
+        <link rel="stylesheet" href="./Pages/mobileStyle.css">
     </head>
     <body>
         
@@ -19,86 +20,86 @@
             <img src="" alt="Pop up img">
         </div>
 
-        <div class="row">
-            <div class="col-2">
-                <div class="sidePanel">
-                    <div>
-                        <ul class="Navigation">
-                            <li><a href="/">Home</a></li>
-                            <li class="activeLi"><a href="/about">About</a></li>
-                            <li><a href="/animals">Animals</a></li>
-                            <li><a href="/birds">Birds</a></li>
-                            <li><a href="/landscapes">Landscapes</a></li>
-                        </ul>
-                    </div>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa-solid fa-bars" id="btn"></i>
+            <i class="fa-solid fa-xmark" id="cancle"></i>
+        </label>
 
-                    <div class="contact">
-                        <h4>Contact</h4>
-                        <ul>
-                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="sidePanel">
+            <div>
+                <ul class="Navigation">
+                    <li><a href="/">Home</a></li>
+                    <li class="activeLi"><a href="/about">About</a></li>
+                    <li><a href="/animals">Animals</a></li>
+                    <li><a href="/birds">Birds</a></li>
+                    <li><a href="/landscapes">Landscapes</a></li>
+                </ul>
             </div>
 
-            <div class="col-10">
-                <div class="content">
-
-                    <div class="titleBox">
-                        <div class="row">
-                            <div class="col title">
-                                <h1>I am Laura Madaro</h1>
-                                <h4>A wildLife Photographer. I love to capture birds and animals</h4>
-                            </div>
-                            <div class="col profilePic">
-                                <img src="./images/ProfilePic.jpg" alt="PortraitPhoto">
-                            </div>
-                        </div>
-                    </div>
-
-                    <section>
-                        <div class="row">
-                            <div class="col profilePic">
-                                <img src="./images/aboutMeLocation.jpg" alt="MyLocation">
-                            </div>
-                            <div class="col infoBoxLeft">
-                                <h2>I am from India</h2>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, veniam excepturi quam provident nisi pariatur
-                                    perspiciatis quasi quia mollitia reiciendis ipsam quae! Reiciendis voluptatibus, soluta ratione exercitationem
-                                    rem eum perspiciatis, eveniet at, facere adipisci iusto sint quas ea eaque possimus itaque error dolor. Non quia
-                                    possimus dolorem quaerat repellat neque.</p>
-                            </div>
-                        </div>
-                    </section>
-                    
-                    <section>
-                        <div class="row">
-                            <div class="col infoBoxRight">
-                                <h2>I Enjoy Photography</h2>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, veniam excepturi quam provident nisi pariatur
-                                    perspiciatis quasi quia mollitia reiciendis ipsam quae! Reiciendis voluptatibus, soluta ratione exercitationem
-                                    rem eum perspiciatis, eveniet at, facere adipisci iusto sint quas ea eaque possimus itaque error dolor. Non quia
-                                    possimus dolorem quaerat repellat neque.</p>
-                            </div>
-                            <div class="col profilePic">
-                                <img src="./images/photoCam.jpg" alt="MyLocation">
-                            </div>
-                        </div>
-                    </section>
-                </div>
-
-                <div class="footer" style="color: aliceblue;">
-                    <p>@ All Photos From Pexels</p>
-                    <p>Made by <a href="https://github.com/Piyush-Bhagwat" target="_blank">abNormal</a></p>  
-                </div>
+            <div class="contact">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                </ul>
             </div>
         </div>
-        
-        </div>
 
-        
+        <section class="displayArea">
+            <div class="content">
+
+                <div class="titleBox">
+                    <div class="row">
+                        <div class="col title">
+                            <h1>I am Laura Madaro</h1>
+                            <h4>A wildLife Photographer. I love to capture birds and animals</h4>
+                        </div>
+                        <div class="col profilePic">
+                            <img src="./images/ProfilePic.jpg" alt="PortraitPhoto">
+                        </div>
+                    </div>
+                </div>
+
+                <section>
+                    <div class="row">
+                        
+                        <div class="col-lg-6 infoBoxRight">
+                            <h2>I am from India</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, veniam excepturi quam provident nisi pariatur
+                                perspiciatis quasi quia mollitia reiciendis ipsam quae! Reiciendis voluptatibus, soluta ratione exercitationem
+                                rem eum perspiciatis, eveniet at, facere adipisci iusto sint quas ea eaque possimus itaque error dolor. Non quia
+                                possimus dolorem quaerat repellat neque.</p>
+                        </div>
+                        <div class="col-lg-6 profilePic">
+                            <img src="./images/aboutMeLocation.jpg" alt="MyLocation">
+                        </div>
+                    </div>
+                </section>
+                
+                <section>
+                    <div class="row">
+                        <div class="col-lg-6 infoBoxRight">
+                            <h2>I Enjoy Photography</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, veniam excepturi quam provident nisi pariatur
+                                perspiciatis quasi quia mollitia reiciendis ipsam quae! Reiciendis voluptatibus, soluta ratione exercitationem
+                                rem eum perspiciatis, eveniet at, facere adipisci iusto sint quas ea eaque possimus itaque error dolor. Non quia
+                                possimus dolorem quaerat repellat neque.</p>
+                        </div>
+                        <div class="col-lg-6 profilePic">
+                            <img src="./images/photoCam.jpg" alt="MyLocation">
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="footer" style="color: aliceblue;">
+                <p>@ All Photos From Pexels</p>
+                <p>Made by <a href="https://github.com/Piyush-Bhagwat" target="_blank">abNormal</a></p>  
+            </div>
+        </section>
+       
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"

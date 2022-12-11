@@ -2,6 +2,9 @@ const images = $(".images");
 const popUp = $(".imgPopUp");
 const popUpImage = $(".imgPopUp img");
 const closeButton = $(".imgPopUp button");
+
+const bodyEl = $("body");
+const checkBox = $("#check");
 let isPopOpen = false;
 
 const html = $("html");
@@ -36,4 +39,17 @@ function closePopUp(){
     setTimeout(function(){
         popUp.css("display", "none");
     }, 180);
+}
+
+checkBox.click(function (){
+    if(checkBox.prop("checked") && window.innerWidth < 800){
+        html.addClass("stuck");
+    }
+    else{
+        html.removeClass("stuck");
+    }
+})
+
+if(window.innerWidth >= 800){
+    checkBox.prop("checked", true);
 }

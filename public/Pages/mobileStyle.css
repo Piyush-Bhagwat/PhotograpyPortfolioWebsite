@@ -1,0 +1,79 @@
+@media screen and (max-width: 800px){
+    *{
+        text-align: center;
+    }
+
+    h1{
+        font-size: 3.5em;
+    }
+
+    h4{
+        font-size: 1.2em;
+    }
+
+    .sidePanel{
+        width: 100vw;
+        left: -100vw;
+        background-color: rgba(255, 255, 255, 0.91);
+        backdrop-filter: blur(3px);
+    }
+
+    .sidePanel ul{
+        align-items: center;
+        height: 50vh;
+    }
+
+    label #btn{
+        left: 4%;
+    }
+
+    label #cancle{
+        z-index: 10;
+        left: -20%;
+    }
+
+    #check:checked ~ .displayArea{
+        margin-left: 0;
+    }
+    
+    .contact{
+        margin-bottom: 18%;
+    }
+  
+    .contact ul, .contact{
+        align-items: center;
+    }
+
+    .contact ul{
+        width:fit-content;
+        height: fit-content;
+    }
+    /* Title */
+    .titleBox{
+        height: fit-content;
+    }
+
+    .profilePic img{
+        height: 55vh;
+    }
+
+    .titleBox .row{
+        margin: 0;
+    }
+    /* Gallery */
+    .galleryBox {
+        flex-direction: column;
+        padding: 3%;
+    }
+
+    .galleryBox .galleryCol{
+        width: 100%;
+        padding: 0;
+    }
+
+    .imgPopUp img{
+        width: 98vw;
+        height: auto;
+    }
+
+}
