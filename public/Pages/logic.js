@@ -2,10 +2,12 @@ const images = $(".images");
 const popUp = $(".imgPopUp");
 const popUpImage = $(".imgPopUp img");
 const closeButton = $(".imgPopUp button");
+let isPopOpen = false;
 
 const html = $("html");
 
 images.click(function () {
+    console.log(popUpImage);
     popUp.css("display", "flex");
     html.addClass("stuck");
     popUp.css("pointer-events", "all");
@@ -15,15 +17,23 @@ images.click(function () {
     popUpImage.attr("src", imageToShow);
     popUpImage.css('animation', 'imagePopIn 0.2s ease-in');
     console.log(imageToShow);
+    isPopOpen = true;
 });
 
-closeButton.click(function () {
+popUp.click(function (){
+    if(isPopOpen){
+        closePopUp();
+    }
+});
+
+
+function closePopUp(){
     popUp.css('animation', 'popFadeOut 0.2s ease');
     popUp.css("pointer-events", "none");
     html.removeClass("stuck");
+    isPopOpen = false;
 
     setTimeout(function(){
         popUp.css("display", "none");
     }, 180);
-});
-
+}
