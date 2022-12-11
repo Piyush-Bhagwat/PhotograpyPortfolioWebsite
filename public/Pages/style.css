@@ -34,7 +34,12 @@ h4{
 }
 
 section{
+    transition: all 0.5s ease;
     padding: 2%;
+}
+
+.displayArea{
+    padding: 0;
 }
 
 .pageHeadings{
@@ -89,11 +94,13 @@ section{
 .sidePanel{
     padding: 0 3%;
     height: 98vh;
-    width: inherit;
+    width: 250px;
     position: fixed;
+    left: -250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: all 0.5s ease;
 }
 
 .sidePanel ul{
@@ -105,6 +112,44 @@ section{
     list-style: none;
 }
 
+#check{
+    display: none;
+}
+
+label #btn, label #cancle{
+    position: fixed;
+    cursor: pointer;
+    font-size: 2em;
+    transition: all 0.5s ease;
+
+}
+
+label #btn{
+    left: 2%;
+}
+
+label #cancle{
+    z-index: 10;
+    left: -2%;
+}
+
+#check:checked ~ .sidePanel{
+    left: 0;
+}
+
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancle{
+    left: 2.1%;
+}
+
+#check:checked ~ .displayArea{
+    margin-left: 250px;
+}
 
 .Navigation a{
     text-decoration: none;
@@ -155,6 +200,7 @@ section{
     transition: 0.2s ease;
     transform: translateY(-5px);
 }
+
 
 /* Content */
 .content{
