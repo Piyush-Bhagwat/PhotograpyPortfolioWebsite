@@ -93,7 +93,8 @@ section{
 
 .sidePanel{
     padding: 0 3%;
-    height: 98vh;
+    height: 100vh;
+    top: 0;
     width: 250px;
     position: fixed;
     left: -250px;
@@ -117,6 +118,7 @@ section{
 }
 
 label #btn, label #cancle{
+    z-index: 10;
     position: fixed;
     cursor: pointer;
     font-size: 2em;
@@ -129,7 +131,6 @@ label #btn{
 }
 
 label #cancle{
-    z-index: 10;
     left: -2%;
 }
 
