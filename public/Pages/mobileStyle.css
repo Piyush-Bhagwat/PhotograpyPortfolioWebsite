@@ -35,6 +35,14 @@
     #check:checked ~ .displayArea{
         margin-left: 0;
     }
+
+    #check:checked body{
+        background-color: black;
+    }
+
+    .stuck{
+        overflow: hidden;
+    }
     
     .contact ul, .contact{
         align-items: center;
@@ -45,6 +53,9 @@
         height: fit-content;
     }
     /* Title */
+    .titleBox{
+        height: fit-content;
+    }
     /* Gallery */
     .galleryBox {
         flex-direction: column;

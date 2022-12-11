@@ -13,6 +13,7 @@
 
 html{
     overflow-x: hidden;
+    max-width: 100%;
 }
 
 h1{
@@ -263,10 +264,6 @@ label #cancle{
     margin-bottom: 3%;
 }
 
-.stuck{
-    overflow: hidden;
-}
-
 /* About */
 .infoBoxLeft{
     text-align: left;
@@ -306,6 +303,9 @@ label #cancle{
     margin: 0;
 }
 
+.stuck{
+    overflow: hidden;
+}
 
 @keyframes popFadeIn{
     0%{
