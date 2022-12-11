@@ -53,6 +53,10 @@
         height: fit-content;
     }
 
+    .profilePic img{
+        height: 55vh;
+    }
+
     .titleBox .row{
         margin: 0;
     }

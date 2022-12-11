@@ -50,6 +50,6 @@ checkBox.click(function (){
     }
 })
 
-if(window.innerWidth < 800){
-    checkBox.prop("checked", false);
+if(window.innerWidth >= 800){
+    checkBox.prop("checked", true);
 }
