@@ -259,6 +259,7 @@ section{
     margin: 0;
 }
 
+
 @keyframes popFadeIn{
     0%{
         backdrop-filter:brightness(0);
