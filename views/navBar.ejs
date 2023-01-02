@@ -1,0 +1,57 @@
+<input type="checkbox" id="check" />
+<label for="check">
+    <i class="fa-solid fa-bars" id="btn"></i>
+    <i class="fa-solid fa-xmark" id="cancle"></i>
+</label>
+
+<div class="sidePanel">
+    <div>
+        <ul class="Navigation">
+            <%if(isActive == 1){%>
+                <li class="activeLi"><a href="/">Home</a></li>
+            <%} else{ %>
+                <li><a href="/">Home</a></li>
+            <%};%>
+
+            <%if(isActive == 2){%>
+                <li class="activeLi"><a href="/about">About</a></li>
+            <%} else{ %>
+                <li><a href="/about">About</a></li>
+            <%};%>
+
+            <%if(isActive == 3){%>
+                <li class="activeLi"><a href="/animals">Animals</a></li>
+            <%} else{ %>
+                <li><a href="/animals">Animals</a></li>
+            <%};%>
+
+            <%if(isActive == 4){%>
+                <li class="activeLi"><a href="/birds">Birds</a></li>
+            <%} else{ %>
+                <li><a href="/birds">Birds</a></li>
+            <%};%>
+
+            <%if(isActive == 4){%>
+                <li class="activeLi"><a href="/landscapes">Landscapes</a></li>
+            <%} else{ %>
+                <li><a href="/landscapes">Landscapes</a></li>
+            <%};%> 
+        </ul>
+    </div>
+
+    <div class="contact">
+        <h4>Contact</h4>
+        <ul>
+            <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+        </ul>
+    </div>
+</div>
+ 
