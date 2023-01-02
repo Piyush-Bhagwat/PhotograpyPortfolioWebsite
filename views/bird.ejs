@@ -26,26 +26,7 @@
             <i class="fa-solid fa-xmark" id="cancle"></i>
         </label>
 
-        <div class="sidePanel">
-            <div>
-                <ul class="Navigation">
-                    <li ><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/animals">Animals</a></li>
-                    <li class="activeLi"><a href="/birds">Birds</a></li>
-                    <li><a href="/landscapes">Landscapes</a></li>
-                </ul>
-            </div>
-
-            <div class="contact">
-                <h4>Contact</h4>
-                <ul>
-                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                </ul>
-            </div>
-        </div>
+        <%- include("navBar.ejs", {isActive: 4}); -%>
 
         <section class="displayArea">
             <div class="content">

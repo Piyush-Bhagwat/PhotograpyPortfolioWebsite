@@ -10,69 +10,51 @@
             integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="./Pages/style.css">
-        <link rel="stylesheet" href="./Pages/mobileStyle.css">
+        <link rel="stylesheet" href="./Pages/style.css" />
+        <link rel="stylesheet" href="./Pages/mobileStyle.css" />
     </head>
     <body>
-        
         <div class="imgPopUp">
             <button><i class="fa-solid fa-xmark"></i></button>
-            <img src="" alt="Pop up img">
+            <img src="" alt="Pop up img" />
         </div>
 
-        <input type="checkbox" id="check">
+        <input type="checkbox" id="check" />
         <label for="check">
             <i class="fa-solid fa-bars" id="btn"></i>
             <i class="fa-solid fa-xmark" id="cancle"></i>
         </label>
 
-        <div class="sidePanel">
-            <div>
-                <ul class="Navigation">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li class="activeLi"><a href="/animals">Animals</a></li>
-                    <li><a href="/birds">Birds</a></li>
-                    <li><a href="/landscapes">Landscapes</a></li>
-                </ul>
-            </div>
-
-            <div class="contact">
-                <h4>Contact</h4>
-                <ul>
-                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                </ul>
-            </div>
-        </div>
+        <%- include("navBar.ejs", {isActive: 3}); -%>
 
         <section class="displayArea">
             <div class="content">
                 <h1 class="pageHeadings">Animals Photograps</h1>
-                
+
                 <div class="galleryBox">
-                <% let k = 0 %>
-                <%for(let i=0; i<3; i++){%>
+                    <% let k = 0 %> <%for(let i=0; i<3; i++){%>
                     <div class="galleryCol">
-                    
-                    <%for(let j=0; j<5; j++){%>
+                        <%for(let j=0; j<5; j++){%>
                         <div class="galleryImg">
-                            <img src="./images/Animals/<%=imgName[k]%>" class="images" alt="MyImage">
+                            <img
+                                src="./images/Animals/<%=imgName[k]%>"
+                                class="images"
+                                alt="MyImage"
+                            />
                         </div>
-                        <%k++%>
-                        <%if(k+1 > imgName.length){%>
-                        <%break}%>
-                    <%}%>
+                        <%k++%> <%if(k+1 > imgName.length){%> <%break}%> <%}%>
                     </div>
-                    <%if(k > imgName.length){%>
-                    <%break}%>
-                <%}%>                     
+                    <%if(k > imgName.length){%> <%break}%> <%}%>
                 </div>
             </div>
             <div class="footer">
                 <p>@ All Photos From Pexels</p>
-                <p>Made by <a href="https://github.com/Piyush-Bhagwat" target="_blank">abNormal</a></p>  
+                <p>
+                    Made by
+                    <a href="https://github.com/Piyush-Bhagwat" target="_blank"
+                        >abNormal</a
+                    >
+                </p>
             </div>
         </section>
 
@@ -81,7 +63,10 @@
             integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
             crossorigin="anonymous"
         ></script>
-        <script src="https://kit.fontawesome.com/50889841b5.js" crossorigin="anonymous"></script>
+        <script
+            src="https://kit.fontawesome.com/50889841b5.js"
+            crossorigin="anonymous"
+        ></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script src="./Pages/logic.js"></script>
     </body>
